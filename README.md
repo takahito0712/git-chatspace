@@ -15,7 +15,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_name|integer|null: false|
+|name|sting|null: false|
 |email|string|null: false, foreign_key: true|
 |password|string|null: false, foreign_key: true|
 ### Association
@@ -28,8 +28,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false|
-|add_member|string|null: false, foreign_key: true|
+|name|string|null: false|
 ### Association
 - has_many :messages
 - has_many :users_groups
@@ -40,8 +39,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
-|image|string|null: false|
+|body|text|null: false, foreign_key: true|
+|image|string|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 ### Association
