@@ -1,4 +1,3 @@
-
 # chat-space DB設計
 ## groups_usersテーブル
 
