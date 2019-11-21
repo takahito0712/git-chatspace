@@ -51,6 +51,7 @@ Things you may want to cover:
 
 ## groupsテーブル
 
+|Column|Type|Options|
 |------|----|-------|
 |group_name|string|null: false|
 |add_member|string|null: false, foreign_key: true|
